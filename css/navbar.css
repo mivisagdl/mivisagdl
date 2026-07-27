@@ -1,0 +1,134 @@
+/* =====================================
+   MI VISA GDL - NAVBAR V2
+===================================== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+
+    background:rgba(7,26,53,.95);
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.nav-container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    height:92px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 35px;
+
+}
+
+.nav-logo img{
+
+    width:72px;
+
+    display:block;
+
+}
+
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+.nav-menu a{
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.30s;
+
+}
+
+.nav-menu a:hover{
+
+    color:#d4af37;
+
+}
+
+.btn-nav{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    background:#d4af37;
+
+    color:#071A35;
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+    transition:.30s;
+
+}
+
+.btn-nav:hover{
+
+    transform:translateY(-2px);
+
+    background:#e5c66b;
+
+}
+
+.hero{
+
+    padding-top:120px;
+
+}
+
+@media(max-width:992px){
+
+.nav-menu{
+
+display:none;
+
+}
+
+.btn-nav{
+
+display:none;
+
+}
+
+.nav-container{
+
+justify-content:center;
+
+}
+
+}
