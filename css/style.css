@@ -647,7 +647,7 @@ a{
 
 }
 
-/* Línea inferior */
+/* LÃ­nea inferior */
 
 .menu a::after{
 
@@ -792,7 +792,100 @@ a{
         width:62px;
 
     }
+/*=========================================
+        HERO RESPONSIVE
+=========================================*/
 
+@media (max-width: 992px){
+
+    .hero{
+
+        min-height:auto;
+
+        padding:120px 0 60px;
+
+    }
+
+    .hero-container{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+        text-align:center;
+
+    }
+
+    .hero-image{
+
+        order:1;
+
+        justify-content:center;
+
+    }
+
+    .hero-image img{
+
+        max-width:340px;
+
+        width:85%;
+
+    }
+
+    .hero-content{
+
+        order:2;
+
+        align-items:center;
+
+    }
+
+    .hero-content h1{
+
+        font-size:3.3rem;
+
+        line-height:1;
+
+    }
+
+    .hero-content h2{
+
+        font-size:1.2rem;
+
+    }
+
+    .hero-text{
+
+        max-width:100%;
+
+        font-size:1rem;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-buttons a{
+
+        width:100%;
+
+        max-width:320px;
+
+    }
+
+    .hero-social{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+}
+        
 }
 
 /*==================================================
@@ -1440,7 +1533,7 @@ font-size:34px;
 }
 
 /*=========================================
-        CTA DESPUÉS DE TESTIMONIOS
+        CTA DESPUÃ‰S DE TESTIMONIOS
 =========================================*/
 
 .cta-testimonios{
@@ -1608,7 +1701,7 @@ font-size:34px;
 }
 
 /*=========================================
-        BOTÓN GOOGLE MAPS
+        BOTÃ“N GOOGLE MAPS
 =========================================*/
 
 .btn-gold{
@@ -2010,7 +2103,7 @@ transform:translateY(-6px);
 }
 
 /*====================================================
-            ¿POR QUÉ MI VISA GDL?
+            Â¿POR QUÃ‰ MI VISA GDL?
 ====================================================*/
 
 .why-us{
