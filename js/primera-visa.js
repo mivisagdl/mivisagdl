@@ -1,49 +1,7 @@
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PJKJ7SP2');
-
-window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5TDJWBX1T4');
-
-
-/* =========================================================
-   MI VISA GDL — FAQ
-   Apertura/cierre accesible de preguntas frecuentes
-   ========================================================= */
-document.addEventListener("DOMContentLoaded", function () {
-  const faqQuestions = document.querySelectorAll(".faq-question");
-
-  faqQuestions.forEach(function (button) {
-    const answer = button.nextElementSibling;
-    if (!answer) return;
-
-    answer.hidden = true;
-    button.setAttribute("aria-expanded", "false");
-
-    button.addEventListener("click", function () {
-      const isOpen = button.getAttribute("aria-expanded") === "true";
-
-      faqQuestions.forEach(function (otherButton) {
-        const otherAnswer = otherButton.nextElementSibling;
-        otherButton.setAttribute("aria-expanded", "false");
-        if (otherAnswer) otherAnswer.hidden = true;
-
-        const otherIcon = otherButton.querySelector(".faq-icon");
-        if (otherIcon) otherIcon.style.transform = "rotate(0deg)";
-      });
-
-      if (!isOpen) {
-        button.setAttribute("aria-expanded", "true");
-        answer.hidden = false;
-
-        const icon = button.querySelector(".faq-icon");
-        if (icon) icon.style.transform = "rotate(180deg)";
-      }
-    });
-  });
+document.documentElement.classList.add("js-ready");
+document.addEventListener("DOMContentLoaded",()=>{
+ const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector("#main-nav");
+ if(toggle&&nav){toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open))});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");toggle.setAttribute("aria-expanded","false")}))}
+ document.querySelectorAll(".faq-question").forEach(btn=>btn.addEventListener("click",()=>{const item=btn.closest(".faq-item"),ans=item.querySelector(".faq-answer"),open=item.classList.contains("open");document.querySelectorAll(".faq-item.open").forEach(x=>{if(x!==item){x.classList.remove("open");x.querySelector(".faq-answer").style.maxHeight=null}});item.classList.toggle("open",!open);ans.style.maxHeight=!open?ans.scrollHeight+"px":null}));
+ const items=document.querySelectorAll(".reveal");if("IntersectionObserver" in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("is-visible");io.unobserve(e.target)}}),{threshold:.08});items.forEach(x=>io.observe(x))}else items.forEach(x=>x.classList.add("is-visible"));
 });
