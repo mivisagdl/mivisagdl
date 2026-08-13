@@ -2630,3 +2630,184 @@ max-width:420px;
 }
 
 }
+
+
+
+/* =========================================================
+   MI VISA GDL — FOOTER MAESTRO V5
+   Igualado visualmente al footer de la página principal
+   ========================================================= */
+
+.footer{
+    background:#071A35 !important;
+    color:#ffffff !important;
+    padding:110px 0 45px !important;
+    border-top:1px solid rgba(255,255,255,.08) !important;
+    width:100%;
+}
+
+.footer .container{
+    width:min(1120px,calc(100% - 48px));
+    max-width:1120px;
+    margin:0 auto;
+    padding:0;
+}
+
+.footer-grid{
+    display:grid !important;
+    grid-template-columns:2fr 1fr 1fr 1.3fr !important;
+    gap:80px !important;
+    align-items:flex-start !important;
+    text-align:left !important;
+}
+
+.footer-logo{
+    width:95px !important;
+    height:auto !important;
+    max-width:95px !important;
+    display:block !important;
+    margin:0 0 25px 0 !important;
+    object-fit:contain;
+}
+
+.footer-text{
+    color:#DCE7F5 !important;
+    max-width:320px !important;
+    line-height:2 !important;
+    margin:0 0 30px !important;
+    font-size:1rem !important;
+}
+
+.footer-col h3{
+    color:#ffffff !important;
+    margin:0 0 25px !important;
+    font-size:1.2rem !important;
+    line-height:1.3 !important;
+}
+
+.footer-col ul{
+    list-style:none !important;
+    padding:0 !important;
+    margin:0 !important;
+}
+
+.footer-col li{
+    margin:0 0 15px !important;
+    padding:0 !important;
+}
+
+.footer-col a{
+    color:#DCE7F5 !important;
+    text-decoration:none !important;
+    transition:.30s !important;
+    font-size:1rem !important;
+}
+
+.footer-col a:hover{
+    color:#D4AF37 !important;
+}
+
+.footer-col p{
+    color:#DCE7F5 !important;
+    line-height:1.9 !important;
+    margin:0 0 20px !important;
+    font-size:1rem !important;
+}
+
+.footer-social{
+    display:flex !important;
+    gap:18px !important;
+    flex-wrap:wrap !important;
+}
+
+.footer-social a{
+    display:inline-block !important;
+}
+
+.footer-divider{
+    margin:60px auto 40px !important;
+    width:100% !important;
+    height:1px !important;
+    background:rgba(255,255,255,.08) !important;
+}
+
+.footer-bottom{
+    text-align:center !important;
+    display:block !important;
+    margin:0 !important;
+    padding:0 !important;
+    border:0 !important;
+    color:inherit !important;
+}
+
+.footer-frase{
+    font-size:1.25rem !important;
+    font-weight:700 !important;
+    color:#D4AF37 !important;
+    margin:0 0 25px !important;
+    line-height:1.4 !important;
+}
+
+.footer-links{
+    display:flex !important;
+    justify-content:center !important;
+    gap:20px !important;
+    margin:0 0 25px !important;
+    flex-wrap:wrap !important;
+}
+
+.footer-links a{
+    color:#DCE7F5 !important;
+    text-decoration:none !important;
+}
+
+.footer-links a:hover{
+    color:#D4AF37 !important;
+}
+
+.footer-links span{
+    color:#DCE7F5 !important;
+}
+
+.footer .copyright{
+    color:#92A7C3 !important;
+    line-height:1.8 !important;
+    font-size:.95rem !important;
+    margin:0 !important;
+}
+
+@media(max-width:1100px){
+    .footer-grid{
+        grid-template-columns:1fr 1fr !important;
+        gap:55px !important;
+        text-align:left !important;
+    }
+}
+
+@media(max-width:768px){
+    .footer{
+        padding:85px 0 40px !important;
+    }
+    .footer-grid{
+        grid-template-columns:1fr !important;
+        gap:45px !important;
+        text-align:center !important;
+    }
+    .footer-logo{
+        margin:0 auto 25px !important;
+    }
+    .footer-text{
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+    .footer-social{
+        justify-content:center !important;
+    }
+    .footer-col ul{
+        text-align:center !important;
+    }
+    .footer-col p{
+        text-align:center !important;
+    }
+}
+
